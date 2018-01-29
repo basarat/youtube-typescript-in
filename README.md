@@ -1,8 +1,8 @@
 > More : https://basarat.gitbooks.io/typescript/docs/types/typeGuard.html
 
-Say you have an interface `Foo` with property `foo` of type number 
+Say you have an interface `Foo` with property `foo` of type number
 And and interface `Bar` with a property `bar` of type string
-And you have a case where a value might be of type `Foo` or `Bar` represented here as a union type 
+And you have a case where a value might be of type `Foo` or `Bar` represented here as a union type
 
 ```js
 interface Foo {
@@ -33,8 +33,16 @@ function test(value: Union) {
   }
 }
 ```
-Now with TypeScript 2.7 you no longer need to create a custom type guard for filtering between these types ***delete isFoo***. You can use the standard javascript `in` operator 
+Now with TypeScript 2.7 you no longer need to create a custom type guard for filtering between these types ***delete isFoo***. You can use the standard javascript `in` operator.
 
 ```js
-
+function test(value: Union) {
+  if ('foo' in value) {
+    console.log(value.foo) // Okay!
+  }
+}
 ```
+
+This just another example of TypeScript understanding and standardizing best practices for JavaScript development.
+
+> If you enjoyed this video and would like to see more don't forget to subscribe.

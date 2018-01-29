@@ -1,5 +1,7 @@
 > More : https://basarat.gitbooks.io/typescript/docs/types/typeGuard.html
 
+Today we are going to be demonstrating `in` based type guards which is a new feature in TypeScript 2.7
+
 Say you have an interface `Foo` with property `foo` of type number
 And and interface `Bar` with a property `bar` of type string
 And you have a case where a value might be of type `Foo` or `Bar` represented here as a union type

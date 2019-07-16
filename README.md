@@ -1,3 +1,6 @@
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/basarat/youtube-typescript-in.svg)](https://greenkeeper.io/)
+
 > More : https://basarat.gitbooks.io/typescript/docs/types/typeGuard.html
 
 Today we are going to be demonstrating `in` based type guards which is a new feature in TypeScript 2.7
